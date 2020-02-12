@@ -1,0 +1,39 @@
+body {
+	background-color: #BCD2EE;
+}
+
+.container {
+	display: flex;
+	height: 75vh;
+}
+
+#welcomeImg {
+	flex-basis: 40%;
+	margin: auto 15px;
+}
+
+#welcomeImg img {
+	width: 100%;
+	height: auto;
+}
+
+#about {
+	flex-basis: 60%;
+	margin: auto 15px;
+	padding: auto 100px;
+	font-family: "Nixie One", "Courier New", Courier, monospace;
+	font-size: 1.2em;
+}
+
+@media screen and (max-width: 700px) {
+	.container {
+		flex-direction: column;
+		height: 85vh;
+	}
+	
+	#about {
+		display: block;
+		width: 80vw;
+		margin: auto;
+	}
+}

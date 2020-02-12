@@ -1,0 +1,10 @@
+.search {
+	margin: 15px;
+	height: 80vh;
+}
+
+iframe {
+	width: 98%;
+	height: 100%;
+	margin: auto;
+}

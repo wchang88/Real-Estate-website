@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>	
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Contact Me</title>
+		<link rel="icon" type="image/png" size="16x16" href="favicon-16x16.png">
+		
+		<link href='https://fonts.googleapis.com/css?family=Nixie One' rel='stylesheet'>
+		<link href="general.css" rel="stylesheet">
+		<link href="style.css" rel="stylesheet">
+	</head>
+
+	<body>
+		<header>
+			<div id="chi">
+				<span class="english" onclick="translateTo('english', 'chinese')">繁體中文／简体中文</span>
+				<span class="chinese" onclick="translateTo('chinese', 'english')">Switch to English</span>
+				
+				<script>
+					function translateTo(lang1, lang2){
+						var x = document.getElementsByClassName(lang1);
+						for (var i = 0; i < x.length; i++){
+							x[i].style.display = "none";
+						}
+						var y = document.getElementsByClassName(lang2);
+						for (var i = 0; i < y.length; i++){
+							y[i].style.display = "inline";
+						}
+					}
+				</script>
+			</div>
+		</header>
+
+		<nav class="nav">
+			<a href="index.html"><span class="english">Home</span><span class="chinese">首頁／首页</span></a>
+			<a href="homeSearch.html"><span class="english">Find a House</span><span class="chinese">買房／买房</span></a>
+			<a href="mortgageCalculator.html"><span class="english">Mortgage Calculator</span><span class="chinese">貸款計算／贷款计算</span></a>
+			<a href="contact.html"><span class="english">Contact Me</span><span class="chinese">聯絡方式／联络方式</span></a>
+		</nav>
+		
+		<div class="container">
+			<div id="welcomeImg">
+				<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6e/Welcome_to_Las_Vegas_%289063525666%29.jpg/640px-Welcome_to_Las_Vegas_%289063525666%29.jpg" />
+			</div>
+			<div id="about">
+				<h1><span class="english">Contact Me</span><span class="chinese">聯絡方式／联络方式</span></h1>
+				Sherry Hsiao <br />
+				Realty One Group <br />
+				Email: sherryhsiao88@gmail.com<br />
+				Phone: (702) 287-8680<br />
+				Fax: (702) 991-7898<br />
+			</div>
+		</div>
+		<hr />
+		<footer>
+			"<a href="https://www.flickr.com/photos/medau/9063525666/">Welcome to Las Vegas</a>" 
+			by <a href="https://www.flickr.com/photos/medau/">Joao Carlos Medau</a> 
+			is licensed under <a href="https://creativecommons.org/licenses/by/2.0/">CC BY 2.0</a>
+		</footer>
+	</body>
+</html>
